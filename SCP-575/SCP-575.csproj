@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -35,91 +35,66 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\References\Assembly-CSharp-Publicized.dll</HintPath>
+      <HintPath>\\server-pc\Servers\lambda_scp\SCPSL_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\References\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>\\server-pc\Servers\lambda_scp\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="CommandSystem.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\References\CommandSystem.Core.dll</HintPath>
+      <HintPath>\\server-pc\Servers\lambda_scp\SCPSL_Data\Managed\CommandSystem.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.API, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.API.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Exiled.API">
+      <HintPath>\\server-pc\Users\starw\AppData\Roaming\EXILED\Plugins\dependencies\Exiled.API.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Bootstrap, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.Bootstrap.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Exiled.CreditTags">
+      <HintPath>\\server-pc\Users\starw\AppData\Roaming\EXILED\Plugins\Exiled.CreditTags.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CreditTags, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.CreditTags.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Exiled.CustomItems">
+      <HintPath>\\server-pc\Users\starw\AppData\Roaming\EXILED\Plugins\Exiled.CustomItems.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CustomItems, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.CustomItems.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Exiled.CustomRoles">
+      <HintPath>\\server-pc\Users\starw\AppData\Roaming\EXILED\Plugins\Exiled.CustomRoles.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CustomRoles, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.CustomRoles.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Exiled.Events">
+      <HintPath>\\server-pc\Users\starw\AppData\Roaming\EXILED\Plugins\Exiled.Events.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Events, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.Events.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Exiled.Loader">
+      <HintPath>\\server-pc\Users\starw\AppData\Roaming\EXILED\Exiled.Loader.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Loader, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.Loader.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Exiled.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.Permissions.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Exiled.Permissions">
+      <HintPath>\\server-pc\Users\starw\AppData\Roaming\EXILED\Plugins\Exiled.Permissions.dll</HintPath>
     </Reference>
     <Reference Include="Exiled.Updater, Version=3.1.1.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\EXILED.5.0.0-alpha.18\lib\net472\Exiled.Updater.dll</HintPath>
+      <HintPath>\\server-pc\Users\starw\AppData\Roaming\EXILED\Plugins\Exiled.Updater.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Mirror, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\References\Mirror.dll</HintPath>
+      <HintPath>\\server-pc\Servers\lambda_scp\SCPSL_Data\Managed\Mirror.dll</HintPath>
     </Reference>
     <Reference Include="NorthwoodLib, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\References\NorthwoodLib.dll</HintPath>
+      <HintPath>\\server-pc\Servers\lambda_scp\SCPSL_Data\Managed\NorthwoodLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\References\UnityEngine.dll</HintPath>
+      <HintPath>\\server-pc\Servers\lambda_scp\SCPSL_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\References\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>\\server-pc\Servers\lambda_scp\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\References\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>\\server-pc\Servers\lambda_scp\SCPSL_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="ConfigObjects\InstanceType.cs" />
-    <Compile Include="ConfigObjects\NpcConfig.cs" />
-    <Compile Include="ConfigObjects\PlayableConfig.cs" />
     <Compile Include="EventHandlers.cs" />
-    <Compile Include="NestingObjects\Playable.cs" />
-    <Compile Include="Npc\EventHandlers.cs" />
-    <Compile Include="Npc\Methods.cs" />
-    <Compile Include="NestingObjects\Npc.cs" />
-    <Compile Include="Playable\BlackoutAbility.cs" />
-    <Compile Include="Playable\EventHandlers.cs" />
-    <Compile Include="Playable\Methods.cs" />
-    <Compile Include="Playable\Scp575.cs" />
     <Compile Include="Plugin.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
