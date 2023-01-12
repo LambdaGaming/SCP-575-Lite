@@ -8,6 +8,9 @@ namespace SCP_575
 		[Description( "Whether or not the plugin is enabled." )]
 		public bool IsEnabled { get; set; } = true;
 
+		[Description( "Whether or not debug messages should be shown in the console." )]
+		public bool Debug { get; set; } = false;
+
 		[Description( "Whether or not randomly timed events should occur. If false, all events will be at the same interval apart." )]
 		public bool RandomEvents { get; private set; } = true;
 

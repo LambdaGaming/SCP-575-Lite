@@ -12,8 +12,8 @@ namespace SCP_575
 		public override string Author { get; } = "Joker119 | Modified by LambdaGaming";
 		public override string Name { get; } = "SCP-575 Lite";
 		public override string Prefix { get; } = "575";
-		public override Version Version { get; } = new Version( 4, 0, 0 );
-		public override Version RequiredExiledVersion { get; } = new Version( 5, 0, 0 );
+		public override Version Version { get; } = new Version( 4, 0, 1 );
+		public override Version RequiredExiledVersion { get; } = new Version( 6, 0, 0 );
 
 		public EventHandlers EventHandlers { get; private set; }
 		public List<Player> StopRagdollList { get; } = new List<Player>();

@@ -2,7 +2,8 @@ using System.Collections.Generic;
 using Exiled.API.Enums;
 using Exiled.API.Features;
 using Exiled.API.Features.Items;
-using Exiled.Events.EventArgs;
+using Exiled.Events.EventArgs.Player;
+using Exiled.Events.EventArgs.Server;
 using Exiled.Loader;
 using MEC;
 using Respawning;
@@ -56,7 +57,7 @@ namespace SCP_575
 			{
 				foreach ( Player player in Player.List )
 				{
-					if ( !player.CurrentRoom.LightsOn && player.IsHuman && !player.HasFlashlightModuleEnabled && ( !( player.CurrentItem is Flashlight flashlight ) || !flashlight.Active ) )
+					if ( player.CurrentRoom.AreLightsOff && player.IsHuman && !player.HasFlashlightModuleEnabled && ( !( player.CurrentItem is Flashlight flashlight ) || !flashlight.Active ) )
 					{
 						player.Hurt( _plugin.Config.KeterDamage, _plugin.Config.KilledBy );
 						player.Broadcast( _plugin.Config.KeterBroadcast );
@@ -68,11 +69,11 @@ namespace SCP_575
 
 		public void OnSpawningRagdoll( SpawningRagdollEventArgs ev )
 		{
-			if ( !_plugin.StopRagdollList.Contains( ev.Owner ) )
+			if ( !_plugin.StopRagdollList.Contains( ev.Player ) )
 				return;
 
 			ev.IsAllowed = false;
-			_plugin.StopRagdollList.Remove( ev.Owner );
+			_plugin.StopRagdollList.Remove( ev.Player );
 		}
 
 		public void OnRoundStart()
@@ -101,7 +102,7 @@ namespace SCP_575
 		public void OnTriggerTesla( TriggeringTeslaEventArgs ev )
 		{
 			if ( TeslasDisabled )
-				ev.IsTriggerable = false;
+				ev.IsAllowed = false;
 		}
 	}
 }
