@@ -51,13 +51,13 @@ namespace SCP_575
 		public string KilledBy { get; set; } = "SCP-575";
 
 		[Description( "Message said by Cassie when a blackout starts." )]
-		public string CassieMessageStart { get; set; } = "facility power system failure in 3 . 2 . 1 .";
+		public string CassieMessageStart { get; set; } = "pitch_1.00 .G1 pitch_0.70 .G1";
 
 		[Description( "The sound CASSIE will make when a blackout begins." )]
 		public string CassieKeter { get; set; } = "pitch_0.15 .g7";
 
 		[Description( "The message CASSIE will say when a blackout ends." )]
-		public string CassieMessageEnd { get; set; } = "facility power system now operational";
+		public string CassieMessageEnd { get; set; } = "pitch_0.70 .G1 pitch_1.00 .G1";
 
 		[Description( "Broadcast shown when a player is damaged by SCP-575." )]
 		public Exiled.API.Features.Broadcast KeterBroadcast { get; set; } = new Exiled.API.Features.Broadcast( "You were damaged by SCP-575! Equip a flashlight!", 5 );

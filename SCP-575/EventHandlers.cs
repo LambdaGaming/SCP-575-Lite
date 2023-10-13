@@ -24,11 +24,10 @@ namespace SCP_575
 
 			for (; ; )
 			{
-				RespawnEffectsController.PlayCassieAnnouncement( _plugin.Config.CassieMessageStart, false, true );
+				RespawnEffectsController.PlayCassieAnnouncement( _plugin.Config.CassieMessageStart, false, false );
 
 				if ( _plugin.Config.DisableTeslas )
 					_plugin.EventHandlers.TeslasDisabled = true;
-				yield return Timing.WaitForSeconds( 8.7f );
 
 				float blackoutDur = _plugin.Config.DurationMax;
 				if ( _plugin.Config.RandomEvents )
@@ -39,9 +38,8 @@ namespace SCP_575
 				Map.TurnOffAllLights( blackoutDur, _plugin.Config.OnlyHeavy ? ZoneType.HeavyContainment : ZoneType.Unspecified );
 				if ( _plugin.Config.Voice )
 					RespawnEffectsController.PlayCassieAnnouncement( _plugin.Config.CassieKeter, false, false );
-				yield return Timing.WaitForSeconds( blackoutDur - 8.7f );
-				RespawnEffectsController.PlayCassieAnnouncement( _plugin.Config.CassieMessageEnd, false, true );
-				yield return Timing.WaitForSeconds( 8.7f );
+				yield return Timing.WaitForSeconds( blackoutDur );
+				RespawnEffectsController.PlayCassieAnnouncement( _plugin.Config.CassieMessageEnd, false, false );
 				Timing.KillCoroutines( "keter" );
 				_plugin.EventHandlers.TeslasDisabled = false;
 				if ( _plugin.Config.RandomEvents )
