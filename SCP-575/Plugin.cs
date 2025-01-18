@@ -12,7 +12,7 @@ namespace SCP_575
 		public override string Author { get; } = "Joker119 & OPGman";
 		public override string Name { get; } = "SCP-575 Lite";
 		public override string Prefix { get; } = "575";
-		public override Version Version { get; } = new Version( 4, 1, 0 );
+		public override Version Version { get; } = new Version( 4, 1, 1 );
 		public override Version RequiredExiledVersion { get; } = new Version( 8, 4, 0 );
 
 		public EventHandlers EventHandlers { get; private set; }
